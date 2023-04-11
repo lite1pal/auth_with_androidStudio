@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/usernameSignup"
+        android:background="#30ffffff"
+        android:padding="10dp"
+        android:layout_below="@id/signup"
+        android:layout_marginLeft="100dp"
+        android:hint="username"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/passwordSignup"
+        android:background="#30ffffff"
+        android:padding="10dp"
+        android:layout_below="@id/usernameSignup"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:hint="password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupBtn"
+        android:text="Sign up"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passwordSignup"
+
+        />
+
+    <TextView
+        android:id="@+id/movetoLogin"
+        android:layout_width="72dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="169dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="129dp"
+        android:text="Log in?"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+
+
+</RelativeLayout>
